@@ -14,7 +14,7 @@ const QAcomponent = ({qa, index, activeIndex, setActiveIndex}) => {
             <img src={arrow} alt="arrow-icon"/>
         </div>
         <span>
-          {index === activeIndex ? <p>{qa.answer}</p> : null}
+          {index === activeIndex ? <span>{qa.answer}</span> : null}
         </span>
     </div>
   )
