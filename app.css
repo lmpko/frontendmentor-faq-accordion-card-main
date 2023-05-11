@@ -18,12 +18,12 @@ body{
     font-size: 12px;
     font-weight: 400;
     background: linear-gradient(180deg, var(--primary-bg-color) 50% , var(--secondary-bg-color));
-    min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .faq-container{
@@ -32,30 +32,26 @@ body{
     margin: 9.375rem  .9375rem  6rem .9375rem;
     border-radius: 1.5625rem;
     width: 18.75rem;
-    height: 33.4375rem;
+    height: 36.99999rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.logo-container img:first-child{
+.logo-container{
+    width: 15.625rem;
+    height: 18.25rem;
+    background-image: url("/images/illustration-woman-online-mobile.svg"), url("/images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, bottom;
     position: relative;
-    top: -8rem;
-    width: 80%;
-    left: 1.875rem;
+    top: -11.5625rem;
+    left: 1.5625rem;
 }
-
-.logo-container img:nth-child(2){
-    position: relative;
-    top: -13rem;
-    width: 80%;
-    left: 1.875rem;
-}
-
 .faq-container h1{
     font-size: 32px;
     font-weight: 700;
     text-align: center;
     position: relative;
-    top: -13rem;
+    top: -11.5rem;
 }
 
 .faq-container h2{
@@ -73,7 +69,7 @@ body{
 
 .qa-container {
     position: relative;
-    top: -13rem;
+    top: -12rem;
 }
 
 .wall{
@@ -97,4 +93,32 @@ body{
 .question h2:hover, .question h2:focus{
     cursor: pointer;
     color: var(--secondary-text-color);
+}
+
+@media (min-width: 1000px){
+    .faq-container{
+        display: flex;
+        flex-direction: row;
+        width: 58.125rem;
+    }
+
+    .faq-container h1, .qa-container{
+        position: static;
+        text-align: left;
+    }
+
+    .logo-container img:first-child{
+        position: static;
+        
+    }
+    
+    .logo-container img:nth-child(2){
+        position: static;
+
+    }
+
+    .faq-big-container{
+        width: 33.125rem;
+        padding: 5rem ;
+    }
 }
