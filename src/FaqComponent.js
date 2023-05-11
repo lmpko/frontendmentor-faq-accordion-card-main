@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import illustration from "/images/illustration-woman-online-mobile.svg"
 import bgPattern from "/images/bg-pattern-mobile.svg"
 import QAcomponent from './QAcomponent'
@@ -6,6 +6,7 @@ import { qa } from '../config'
 
 
 const FaqComponent = () => {
+    const [activeIndex, setActiveIndex] = useState(1);
   return (
   <>
     <section className='faq-container'>
@@ -15,7 +16,10 @@ const FaqComponent = () => {
         </div>
         <h1>FAQ</h1>
         <div className='qa-container'>
-            {qa.map((qa,index) => <QAcomponent qa={qa} key={qa.id}/>) }
+            {qa.map((qa,index) => <QAcomponent qa={qa} key={qa.id}
+              index={index}
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex} />) }
         </div>
     </section>
   </>

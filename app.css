@@ -61,9 +61,6 @@ body{
     
 }
 
-.faq-container p{
-    margin-top: 0;
-}
 
 .faq-container .question{
     display: flex;
@@ -79,4 +76,8 @@ body{
 
 .wall{
     border-bottom: 1px solid var(--primary-dividers-color);
+}
+
+.wall{
+    padding: .5rem 0;
 }
