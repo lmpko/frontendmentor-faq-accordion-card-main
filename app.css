@@ -118,7 +118,7 @@ body{
         position: static;
         width: 33.4375rem;
         height: 100%;
-        background-position: -15vh 23vh, -100vh -37vh;
+        background-position: -12vh 19vh,-80vh -32vh;
         background-repeat: no-repeat, no-repeat;
         background-image: url("/images/illustration-woman-online-desktop.svg"), url("/images/bg-pattern-desktop.svg");
     }
