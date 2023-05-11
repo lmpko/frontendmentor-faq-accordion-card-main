@@ -118,9 +118,9 @@ body{
         position: static;
         width: 33.4375rem;
         height: 100%;
-        background-position: -16vh 46vh, -15vh 23vh, -100vh -40vh;
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-image: url("/images/illustration-box-desktop.svg"),url("/images/illustration-woman-online-desktop.svg"), url("/images/bg-pattern-desktop.svg");
+        background-position: -15vh 23vh, -100vh -37vh;
+        background-repeat: no-repeat, no-repeat;
+        background-image: url("/images/illustration-woman-online-desktop.svg"), url("/images/bg-pattern-desktop.svg");
     }
 
     .logo-container::before {
