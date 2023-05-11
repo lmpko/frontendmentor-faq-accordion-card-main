@@ -1,0 +1,20 @@
+
+:root{
+    --primary-text-color: hsl(238, 29%, 16%);
+    --secondary-text-color:  hsl(14, 88%, 65%);
+    --tertiary-text-color: hsl(237, 12%, 33%);
+    --fouthary-text-color: hsl(240, 6%, 50%);
+
+    --primary-bg-color: hsl(273, 75%, 66%);
+    --secondary-bg-color: hsl(240, 73%, 65%);
+
+    --primary-dividers-color: hsl(240, 5%, 91%);
+
+
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
