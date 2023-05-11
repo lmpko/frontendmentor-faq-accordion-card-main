@@ -17,4 +17,66 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
     font-weight: 400;
+    background: linear-gradient(180deg, var(--primary-bg-color) 50% , var(--secondary-bg-color));
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-container{
+    padding: .9375rem;
+    background-color: white;
+    margin: 9.375rem  .9375rem  6rem .9375rem;
+    border-radius: 1.5625rem;
+    height: 33.4375rem;
+}
+
+.logo-container img:first-child{
+    position: relative;
+    top: -8rem;
+    width: 80%;
+    left: 1.875rem;
+}
+
+.logo-container img:nth-child(2){
+    position: relative;
+    top: -13rem;
+    width: 80%;
+    left: 1.875rem;
+}
+
+.faq-container h1{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: -13rem;
+}
+
+.faq-container h2{
+    font-size: 12px;
+    
+}
+
+.faq-container p{
+    margin-top: 0;
+}
+
+.faq-container .question{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qa-container {
+    position: relative;
+    top: -13rem;
+}
+
+.wall{
+    border-bottom: 1px solid var(--primary-dividers-color);
 }
