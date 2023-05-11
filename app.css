@@ -100,25 +100,41 @@ body{
         display: flex;
         flex-direction: row;
         width: 58.125rem;
+        padding: 0;
     }
 
     .faq-container h1, .qa-container{
         position: static;
         text-align: left;
-    }
-
-    .logo-container img:first-child{
-        position: static;
-        
-    }
-    
-    .logo-container img:nth-child(2){
-        position: static;
 
     }
 
     .faq-big-container{
-        width: 33.125rem;
+        width: 33.5rem;
         padding: 5rem ;
     }
+
+    .logo-container{
+        position: static;
+        width: 33.4375rem;
+        height: 100%;
+        background-position: -16vh 46vh, -15vh 23vh, -100vh -40vh;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-image: url("/images/illustration-box-desktop.svg"),url("/images/illustration-woman-online-desktop.svg"), url("/images/bg-pattern-desktop.svg");
+    }
+
+    .logo-container::before {
+        content: "";
+        z-index: 1;
+        width: 15rem;
+        height: 15rem;
+        top: 41%;
+        left: 0.4%;
+        background-image: url("/images/illustration-box-desktop.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        transform: translateX(-50%);
+      }
 }
