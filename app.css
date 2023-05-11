@@ -31,7 +31,9 @@ body{
     background-color: white;
     margin: 9.375rem  .9375rem  6rem .9375rem;
     border-radius: 1.5625rem;
+    width: 18.75rem;
     height: 33.4375rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .logo-container img:first-child{
@@ -58,7 +60,7 @@ body{
 
 .faq-container h2{
     font-size: 12px;
-    
+    color: var(--fouthary-text-color);
 }
 
 
@@ -80,4 +82,19 @@ body{
 
 .wall{
     padding: .5rem 0;
+}
+
+.question.active h2{
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-text-color);
+  }
+
+.question.active img{
+    transform: rotate(180deg);
+}
+
+.question h2:hover, .question h2:focus{
+    cursor: pointer;
+    color: var(--secondary-text-color);
 }
